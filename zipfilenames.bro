@@ -80,7 +80,7 @@ function generate_notice(f: fa_file, filecount:count, dangerousfiles:DangerousFi
 
 	local source_info = "";
 	if(f$source == "HTTP"){
-		source_info = fmt("Executable with found in zipfile downloaded from: %s.", HTTP::build_url_http(f$http));
+		source_info = fmt("Executable found in zipfile downloaded from: %s.", HTTP::build_url_http(f$http));
 	}
 	else{
 		source_info = fmt("Executable found in zipfile from %s.", f$source );
