@@ -7,7 +7,7 @@ module zip_filenames;
 
 global DEBUG_MODE = T;
 
-global dangerous_extensions: set[string] = {"bat", "cmd", "exe", "jar", "lnk", "ps1", "scr", "sct", "vb", "vbe", "vbs", "ws", "wsf", "wsh"};
+global dangerous_extensions: set[string] = {"bat", "cmd", "exe", "jar", "js", "lnk", "ps1", "scr", "sct", "vb", "vbe", "vbs", "ws", "wsf", "wsh"};
 
 type notice_types: enum {
     ZIP_WITH_DANGEROUS_CONTENT,
