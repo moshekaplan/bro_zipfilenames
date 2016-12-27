@@ -67,7 +67,7 @@ function get_dangerous_filenames(filenames: vector of string): DangerousFileVect
 	for (i in filenames){
 		local filename = filenames[i];
 		local ext = get_ext(filename);
-		if(ext in dangerous_extensions){
+		if("." in filename && ext in dangerous_extensions){
 			print_debug( fmt("%s is dangerous! Extension of .%s!", filename, ext));
 			dangerousfiles[|dangerousfiles|] = DangerousFile($filename=filename, $ext=ext);
 		}
