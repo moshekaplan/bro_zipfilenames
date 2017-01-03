@@ -182,8 +182,7 @@ event zip_filenames::zip_filenames(f: fa_file, data:string){
     for(ext in other_exts_set){
         other_exts[|other_exts|] = ext;
     }
-    #TODO: Sort other_exts
-    
+    sort(other_exts, strcmp);
 
     # Alert on the dangerous files
     generate_notice(f, filecount, dangerous_filenames, other_exts);
