@@ -5,7 +5,7 @@ module zip_filenames;
 # 
 # The script extracts the filenames from the Local File Header entries
 
-global DEBUG_MODE = T;
+global DEBUG_MODE = F;
 
 global dangerous_extensions: set[string] = {"bat", "cmd", "exe", "jar", "lnk", "ps1", "scr", "sct", "vb", "vbe", "vbs", "ws", "wsf", "wsh"};
 
